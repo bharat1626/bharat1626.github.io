@@ -20,10 +20,6 @@
 </div>
 <script src="https://apd.myportal.hap.org/lightning/lightning.out.js"></script>
 <script>
- document.getElementById("demo").innerHTML = 
-"The full URL of this page is:<br>" + window.location.href;
-  var Str1 = document.getElementById("demo").innerHTML;
-   document.write(Str1 + "</br>" );
 $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
     function() {                  // Callback once framework and app load
         $Lightning.createComponent(
