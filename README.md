@@ -23,7 +23,7 @@
   var Str1 = window.location.href;
    document.write(Str1 + "</br>" );
  var inputVariables = [
-         { name : "URL", type : "String", value: Str1 } 
+         { name : "inputVariables", type : "String", value: Str1 } 
          
        ];
 $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
