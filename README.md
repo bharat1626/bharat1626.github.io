@@ -19,6 +19,8 @@
 </div>
 <script src="https://haporg--apmdev.sandbox.my.site.com/lightning/lightning.out.js"></script>
 <script>
+    var Str1 = window.location.href;
+   document.write(Str1 + "</br>" );
 $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
     function() {                  // Callback once framework and app load
         $Lightning.createComponent(
@@ -29,7 +31,7 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
                 component.startFlow("Inbound_New_Guest_Appointment_Custom");
             }
         );
-    },    'https://haporg--apmdev.sandbox.my.site.com/s/'  // Site endpoint
+    },    'https://haporg--apmdev.sandbox.my.site.com/'  // Site endpoint
 );
 </script>
  
