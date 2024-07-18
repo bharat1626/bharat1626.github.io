@@ -35,7 +35,7 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
                 component.startFlow("Inbound_New_Guest_Appointment_Custom",inputVariables);
             }
         );
-    },    'https://haporg--apmdev.sandbox.my.site.com'  // Site endpoint
+    },    'https://haporg--apmdev.sandbox.my.site.com/'  // Site endpoint
 );
 </script>
  
