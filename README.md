@@ -17,7 +17,7 @@
 <div id="lexcontainer">
 <p>Invoke the Lightning Component specified in the Script.</p>
 </div>
-<script src="https://haporg--apmdev.sandbox.my.site.com/s/lightning/lightning.out.js"></script>
+<script src="https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/s/lightning/lightning.out.js"></script>
 <script>
   var Str1 = window.location.href;
    document.write(Str1 + "</br>" );
@@ -32,10 +32,10 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
             { },    // attributes to set on the component when created
             "lexcontainer",    // the DOM location to insert the component
             function(component) {            // API name of the Flow
-                component.startFlow("Inbound_New_Guest_Appointment_Custom");
+                component.startFlow("Inbound_New_Guest_Appointment_Custom",inputVariables);
             }
         );
-    },    'https://haporg--apmdev.sandbox.my.site.com/s/'  // Site endpoint
+    },    'https://haporg--apmdev.sandbox.my.site.com/scheduleappointment/s/'  // Site endpoint
 );
 </script>
  
