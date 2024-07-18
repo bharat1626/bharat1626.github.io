@@ -32,7 +32,7 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
             { },    // attributes to set on the component when created
             "lexcontainer",    // the DOM location to insert the component
             function(component) {            // API name of the Flow
-                component.startFlow("Inbound_New_Guest_Appointment_Custom",inputVariables);
+                component.startFlow("Inbound_New_Guest_Appointment_Custom");
             }
         );
     },    'https://haporg--apmdev.sandbox.my.site.com/s/'  // Site endpoint
