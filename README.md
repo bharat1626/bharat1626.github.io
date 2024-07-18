@@ -22,6 +22,10 @@
 <script>
   var Str1 = window.location.href;
    document.write(Str1 + "</br>" );
+ var inputVariables = [
+         { name : "URL", type : "String", value: Str1 } 
+         
+       ];
 $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
     function() {                  // Callback once framework and app load
         $Lightning.createComponent(
@@ -29,7 +33,7 @@ $Lightning.use("runtime_appointmentbooking:lightningOutGuest",
             { },    // attributes to set on the component when created
             "lexcontainer",    // the DOM location to insert the component
             function(component) {            // API name of the Flow
-                component.startFlow("Inbound_New_Guest_Appointment_Custom");
+                component.startFlow("Inbound_New_Guest_Appointment_Custom",inputVariables);
             }
         );
     },    'https://apd.myportal.hap.org/'  // Site endpoint
